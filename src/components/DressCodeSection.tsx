@@ -28,7 +28,7 @@ const DressCodeSection = () => {
       {/* Description */}
       <div className="max-w-2xl mx-auto mb-8">
         <p className="dress-description text-xl text-[#e8d3a9]">
-          We're envisioning a wedding day bathed in soft, natural tones, centered around sage green. If you'd like to embrace the palette, think gentle greens, muted earth tones, and creams.
+          We&apos;re envisioning a wedding day bathed in soft, natural tones, centered around sage green. If you&apos;d like to embrace the palette, think gentle greens, muted earth tones, and creams.
         </p>
       </div>
       
