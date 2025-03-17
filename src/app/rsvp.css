@@ -47,7 +47,7 @@
 }
 
 #rsvp p {
-  font-family: Georgia, serif !important;
+  font-family: var(--font-adlam) !important;
   opacity: 0.9 !important;
   color: #4a5d4a !important;
 }

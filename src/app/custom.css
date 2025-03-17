@@ -10,6 +10,13 @@
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
+.font-minecraft {
+  font-family: var(--font-minecraft);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+  image-rendering: pixelated;
+}
+
 /* Pixel art styling */
 .pixel-border {
   box-shadow: 0 -4px 0 0 #e8d3a9, 
@@ -251,7 +258,7 @@ nav button svg {
 }
 
 .rsvp-date {
-  font-family: 'Georgia', serif;
+  font-family: var(--font-adlam);
   color: #4a5d4a;
   font-size: 1.25rem;
   font-weight: 400;
@@ -278,7 +285,7 @@ nav button svg {
 }
 
 .church-description {
-  font-family: 'Georgia', serif;
+  font-family: var(--font-adlam);
   color: #4a5d4a;
   line-height: 1.6;
   text-align: center;
@@ -304,7 +311,7 @@ nav button svg {
 }
 
 .reception-description {
-  font-family: 'Georgia', serif;
+  font-family: var(--font-adlam);
   color: #4a5d4a;
   line-height: 1.6;
   text-align: center;
@@ -321,7 +328,7 @@ nav button svg {
 }
 
 .cocktail-description {
-  font-family: 'Georgia', serif;
+  font-family: var(--font-adlam);
   color: #4a5d4a;
   line-height: 1.6;
   text-align: center;
@@ -338,7 +345,380 @@ nav button svg {
 }
 
 .dinner-description {
-  font-family: 'Georgia', serif;
+  font-family: var(--font-adlam);
   color: #4a5d4a;
   line-height: 1.6;
+}
+
+/* Entourage Section Styling */
+.entourage-title {
+  font-family: var(--font-04b-30);
+  color: #e8d3a9;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 640px) {
+  .entourage-title {
+    padding: 1rem 1.5rem;
+    line-height: 1.2;
+  }
+}
+
+.entourage-subtitle {
+  font-family: var(--font-minecraft);
+  color: #e8d3a9;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  image-rendering: pixelated;
+}
+
+.entourage-name {
+  font-family: var(--font-minecraft);
+  color: #e8d3a9;
+  letter-spacing: 0.05em;
+}
+
+/* How We Got Here Section Styling */
+.story-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.story-description {
+  font-family: var(--font-adlam);
+  color: #4a5d4a;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.story-carousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.story-carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.story-carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.story-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #a8b9a8;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.story-carousel-dot.active {
+  background-color: #4a5d4a;
+}
+
+@media (min-width: 768px) {
+  .story-carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  
+  .story-carousel-dots {
+    display: none;
+  }
+}
+
+/* Meet Jay Section Styling */
+.meet-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.meet-description {
+  font-family: var(--font-adlam);
+  color: #4a5d4a;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.meet-image {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Note Section Styling */
+.note-container {
+  background-color: #f0c28d;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.note-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.note-text {
+  font-family: var(--font-adlam);
+  color: #4a5d4a;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Family Photo Section Styling */
+.family-photo-section {
+  background-color: #f8efd4;
+  padding: 0;
+  margin-top: 0;
+}
+
+.family-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Dress Code Section Styling */
+.dress-title {
+  font-family: var(--font-04b-30);
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.dress-description {
+  font-family: var(--font-adlam);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* FAQ Section Styling */
+.faq-title {
+  font-family: var(--font-04b-30);
+  color: #e8d3a9;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.faq-question {
+  font-family: var(--font-04b-30);
+  color: #e8d3a9;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.faq-answer {
+  font-family: var(--font-adlam);
+  color: #e8d3a9;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Gifts Section Styling */
+.gifts-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.gifts-description {
+  font-family: var(--font-adlam);
+  color: #4a5d4a;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.gifts-carousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.gifts-carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.gifts-carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.gifts-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #a8b9a8;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gifts-carousel-dot.active {
+  background-color: #4a5d4a;
+}
+
+@media (min-width: 768px) {
+  .gifts-carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  
+  .gifts-carousel-dots {
+    display: none;
+  }
+}
+
+/* Final RSVP Section Styling */
+.final-rsvp-section {
+  background-color: #e8d3a9;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.final-rsvp-text {
+  font-family: var(--font-adlam);
+  color: #4a5d4a;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.final-rsvp-button {
+  font-family: var(--font-04b-30);
+  background-color: #e8d3a9;
+  color: #4a5d4a;
+  border: 2px solid #4a5d4a;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 #4a5d4a;
+  image-rendering: pixelated;
+  margin-bottom: 2rem;
+}
+
+.final-rsvp-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0 #4a5d4a;
+}
+
+.final-rsvp-button:active {
+  transform: translateY(0);
+  box-shadow: 2px 2px 0 #4a5d4a;
+}
+
+.final-rsvp-deadline {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  image-rendering: pixelated;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+/* Footer Section Styling */
+.footer-section {
+  background-color: #4a5d4a;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-links {
+    gap: 4rem;
+  }
+}
+
+.footer-link {
+  font-family: var(--font-04b-30);
+  color: #e8d3a9;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .footer-link {
+    font-size: 1.5rem;
+  }
+}
+
+.footer-link:hover {
+  transform: translateY(-2px);
+  color: #f5e0b6;
 } 

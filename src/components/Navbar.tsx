@@ -9,6 +9,14 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // Close menu after clicking a link
+    }
+  };
+
   return (
     <>
       <nav className={isOpen ? 'hidden' : ''}>
@@ -35,13 +43,97 @@ export default function Navbar() {
       <div className={`nav-menu ${isOpen ? 'open' : ''}`}>
         <div className="nav-menu-content">
           <ul>
-            <li><a href="#" className="nav-link" style={{ fontFamily: 'var(--font-04b-30)' }}>RSVP</a></li>
-            <li><a href="#" className="nav-link" style={{ fontFamily: 'var(--font-04b-30)' }}>RECEPTION</a></li>
-            <li><a href="#" className="nav-link" style={{ fontFamily: 'var(--font-04b-30)' }}>ENTOURAGE</a></li>
-            <li><a href="#" className="nav-link" style={{ fontFamily: 'var(--font-04b-30)' }}>ABOUT US</a></li>
-            <li><a href="#" className="nav-link" style={{ fontFamily: 'var(--font-04b-30)' }}>DRESS CODE</a></li>
-            <li><a href="#" className="nav-link" style={{ fontFamily: 'var(--font-04b-30)' }}>FAQ</a></li>
-            <li><a href="#" className="nav-link" style={{ fontFamily: 'var(--font-04b-30)' }}>ADDITIONAL INFO</a></li>
+            <li>
+              <a 
+                href="#rsvp" 
+                className="nav-link" 
+                style={{ fontFamily: 'var(--font-04b-30)' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('rsvp');
+                }}
+              >
+                RSVP
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#reception" 
+                className="nav-link" 
+                style={{ fontFamily: 'var(--font-04b-30)' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('reception');
+                }}
+              >
+                RECEPTION
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#entourage" 
+                className="nav-link" 
+                style={{ fontFamily: 'var(--font-04b-30)' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('entourage');
+                }}
+              >
+                ENTOURAGE
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#about-us" 
+                className="nav-link" 
+                style={{ fontFamily: 'var(--font-04b-30)' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('about-us');
+                }}
+              >
+                ABOUT US
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#dress-code" 
+                className="nav-link" 
+                style={{ fontFamily: 'var(--font-04b-30)' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('dress-code');
+                }}
+              >
+                DRESS CODE
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#faq" 
+                className="nav-link" 
+                style={{ fontFamily: 'var(--font-04b-30)' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('faq');
+                }}
+              >
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#gifts" 
+                className="nav-link" 
+                style={{ fontFamily: 'var(--font-04b-30)' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('gifts');
+                }}
+              >
+                ADDITIONAL INFO
+              </a>
+            </li>
           </ul>
         </div>
         

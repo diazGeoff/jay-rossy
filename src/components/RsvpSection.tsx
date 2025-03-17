@@ -21,17 +21,24 @@ const RsvpSection = () => {
           
           {/* RSVP Button */}
           <div className="mb-12">
-            <button className="px-10 py-3 text-4xl rounded-lg shadow-md relative" style={{ 
-              imageRendering: 'pixelated',
-              boxShadow: '4px 4px 0 rgba(0,0,0,0.2)',
-              transform: 'translateY(-2px)',
-              border: '2px solid #4a5d4a',
-              fontFamily: 'var(--font-04b-30)',
-              backgroundColor: '#e8d3a9',
-              color: '#4a5d4a'
-            }}>
+            <a 
+              href="https://forms.gle/zWwtLRxTuLokW6bPA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block px-10 py-3 text-4xl rounded-lg shadow-md relative cursor-pointer" 
+              style={{ 
+                imageRendering: 'pixelated',
+                boxShadow: '4px 4px 0 rgba(0,0,0,0.2)',
+                transform: 'translateY(-2px)',
+                border: '2px solid #4a5d4a',
+                fontFamily: 'var(--font-04b-30)',
+                backgroundColor: '#e8d3a9',
+                color: '#4a5d4a',
+                textDecoration: 'none'
+              }}
+            >
               RSVP
-            </button>
+            </a>
           </div>
           
           {/* RSVP Text */}
@@ -46,7 +53,7 @@ const RsvpSection = () => {
               RSVP BEFORE<br />
               APRIL 5, 2025
             </h2>
-            <p className="text-[#4a5d4a] text-2xl mt-8 font-serif">
+            <p className="text-[#4a5d4a] text-2xl mt-8 rsvp-date">
               Date: May 22, 2025
             </p>
           </div>
