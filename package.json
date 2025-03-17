@@ -1,0 +1,38 @@
+{
+  "name": "jay-rosy-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "webpack": "webpack",
+    "webpack:dev": "webpack serve --mode development"
+  },
+  "dependencies": {
+    "next": "15.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^7.1.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.3.0",
+    "ts-loader": "^9.5.2",
+    "ttf2woff": "^3.0.0",
+    "ttf2woff2": "^6.0.1",
+    "typescript": "^5",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

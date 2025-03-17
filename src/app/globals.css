@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./fonts.css";
+@import "./custom.css";
+@import "./rsvp.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-04b: '04b', monospace;
+  --font-04b-30: '04b_30', monospace;
+  --primary-green: #4a5d4a;
+  --primary-tan: #e8d3a9;
+  --secondary-green: #a8b9a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-04b);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+}
+
+/* Mobile viewport fix */
+@media screen and (max-width: 768px) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}

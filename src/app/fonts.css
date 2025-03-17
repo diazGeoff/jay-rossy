@@ -1,0 +1,16 @@
+@font-face {
+  font-family: '04b';
+  src: url('/fonts/04b_03.woff2') format('woff2'),
+       url('/fonts/04b_03.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '04b_30';
+  src: url('/fonts/04B_30__.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} 

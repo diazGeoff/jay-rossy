@@ -1,0 +1,344 @@
+.pixel-text {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: scale(1);
+}
+
+.font-04b {
+  font-family: var(--font-04b);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Pixel art styling */
+.pixel-border {
+  box-shadow: 0 -4px 0 0 #e8d3a9, 
+              0 4px 0 0 #e8d3a9, 
+              4px 0 0 0 #e8d3a9, 
+              -4px 0 0 0 #e8d3a9;
+  image-rendering: pixelated;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .pixel-text {
+    transform: scale(0.9);
+  }
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Enhance pixel art rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Green section styling */
+.bg-green-section {
+  background-color: #4a5d4a;
+  position: relative;
+}
+
+.bg-green-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+/* Hamburger menu styling */
+nav {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+  transition: opacity 0.3s ease;
+}
+
+nav.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+nav button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8d3a9;
+  color: #4a5d4a;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-04b-30);
+}
+
+nav button:hover {
+  background-color: #d8c399;
+}
+
+nav button svg {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(74, 93, 74, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 40;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu.open {
+  right: 0;
+}
+
+.nav-menu-content {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.nav-link {
+  font-family: var(--font-04b-30);
+  color: #e8d3a9;
+  text-decoration: none;
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  display: block;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  image-rendering: pixelated;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  color: #f5e0b6;
+}
+
+/* Close button */
+.close-menu-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8d3a9;
+  color: #4a5d4a;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: var(--font-04b-30);
+}
+
+.close-menu-btn:hover {
+  background-color: #d8c399;
+}
+
+.close-menu-btn svg {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* RSVP Section Styling */
+#rsvp {
+  scroll-margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #rsvp {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+}
+
+.rsvp-button-container {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding: 5px;
+}
+
+.rsvp-button-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4a5d4a;
+  border-radius: 9999px;
+  z-index: 0;
+  transform: translate(4px, 4px);
+}
+
+.rsvp-button {
+  position: relative;
+  background-color: #e8d3a9;
+  color: #4a5d4a;
+  font-family: var(--font-04b-30);
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: 2px solid #4a5d4a;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 2px;
+  z-index: 1;
+  image-rendering: pixelated;
+}
+
+.rsvp-button-container:hover .rsvp-button {
+  transform: translateY(-2px);
+}
+
+.rsvp-button-container:hover::after {
+  transform: translate(6px, 6px);
+}
+
+.rsvp-text {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+  image-rendering: pixelated;
+}
+
+.rsvp-date {
+  font-family: 'Georgia', serif;
+  color: #4a5d4a;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Church Section Styling */
+.church-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.church-subtitle {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.church-description {
+  font-family: 'Georgia', serif;
+  color: #4a5d4a;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Reception Section Styling */
+.reception-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.reception-subtitle {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.reception-description {
+  font-family: 'Georgia', serif;
+  color: #4a5d4a;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Cocktail Section Styling */
+.cocktail-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.cocktail-description {
+  font-family: 'Georgia', serif;
+  color: #4a5d4a;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Dinner Section Styling */
+.dinner-title {
+  font-family: var(--font-04b-30);
+  color: #4a5d4a;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  image-rendering: pixelated;
+  text-transform: uppercase;
+}
+
+.dinner-description {
+  font-family: 'Georgia', serif;
+  color: #4a5d4a;
+  line-height: 1.6;
+} 
