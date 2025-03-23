@@ -171,7 +171,7 @@ const EntourageSection = () => {
         {/* Flower Girls */}
         <div className="mb-8">
           <h2 className="entourage-subtitle text-2xl mb-2">
-            Flower Girl
+            Flower Lady
           </h2>
           <p className="entourage-name text-xl mb-2">
             Ms. Haydara Mama
