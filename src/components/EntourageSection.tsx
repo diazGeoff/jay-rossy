@@ -17,7 +17,7 @@ const EntourageSection = () => {
             Parent of the Groom
           </h2>
           <p className="entourage-name text-xl mb-6">
-            Ma. Teresa Soriano
+            Mrs. Ma. Teresa Soriano
           </p>
           <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-8"></div>
           
@@ -25,7 +25,7 @@ const EntourageSection = () => {
             Parent of the Bride
           </h2>
           <p className="entourage-name text-xl mb-6">
-            Pamela Veroy
+            Mrs. Pamela Veroy
           </p>
           <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-8"></div>
         </div>
