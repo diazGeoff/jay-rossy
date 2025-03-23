@@ -52,7 +52,7 @@ const GiftsSection = () => {
   return (
     <section className="py-16 px-4 bg-[#e8d3a9] flex flex-col items-center justify-center text-center">
       {/* Title */}
-      <h1 className="gifts-title text-5xl mb-12">
+      <h1 className="gifts-title text-4xl mb-12 px-4 py-2">
         ABOUT THE GIFTS
       </h1>
       

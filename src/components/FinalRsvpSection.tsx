@@ -24,7 +24,7 @@ const FinalRsvpSection = () => {
         {/* Deadline */}
         <div className="final-rsvp-deadline">
           Please RSVP before<br />
-          April 01, 2025
+          April 15, 2025
         </div>
       </div>
     </section>

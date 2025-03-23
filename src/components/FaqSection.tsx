@@ -6,7 +6,7 @@ const FaqSection = () => {
   return (
     <section className="py-16 px-4 bg-[#4a5d4a] flex flex-col items-center justify-center text-center">
       {/* Title */}
-      <h1 className="faq-title text-5xl mb-12">
+      <h1 className="faq-title text-4xl mb-12 px-4 py-2">
         FREQUENT QUESTIONS
       </h1>
       

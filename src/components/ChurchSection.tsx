@@ -8,7 +8,7 @@ const ChurchSection = () => {
   return (
     <section className="py-16 px-4 bg-[#e8d3a9] flex flex-col items-center justify-center text-center">
       {/* CHURCH Title */}
-      <h1 className="church-title text-5xl mb-8">
+      <h1 className="church-title text-4xl mb-8 px-4 py-2">
         CHURCH
       </h1>
       

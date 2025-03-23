@@ -17,7 +17,7 @@ const EntourageSection = () => {
             Parent of the Groom
           </h2>
           <p className="entourage-name text-xl mb-6">
-            Ms. Teresa Soriano
+            Ma. Teresa Soriano
           </p>
           <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-8"></div>
           
@@ -51,7 +51,7 @@ const EntourageSection = () => {
             
             <div>
               <p className="entourage-name text-xl mb-2">
-                Mr. Ray Benedict Aquistan
+                Mr. Ray Benedict Aquiatan
               </p>
               <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-6"></div>
               
@@ -91,12 +91,12 @@ const EntourageSection = () => {
             Candle
           </h2>
           <p className="entourage-name text-xl mb-2">
-            Mrs. Jette Aquistan
+            Mrs. Jette Aquiatan
           </p>
           <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-4"></div>
           
           <p className="entourage-name text-xl mb-2">
-            Mr. Matt Aquistan
+            Mr. Matt Aquiatan
           </p>
           <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-8"></div>
         </div>
@@ -123,12 +123,12 @@ const EntourageSection = () => {
               Veil
             </h2>
             <p className="entourage-name text-xl mb-2">
-              Mrs. Jette Aquistan
+              Mrs. Laiza Gandeza
             </p>
             <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-4"></div>
             
             <p className="entourage-name text-xl mb-2">
-              Mr. Matt Aquistan
+              Mr. Sigfred Gandeza
             </p>
             <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-6"></div>
           </div>
@@ -152,7 +152,7 @@ const EntourageSection = () => {
               Bible Bearer
             </h2>
             <p className="entourage-name text-xl mb-2">
-              Mikael Johann Aquistan
+              Mikael Johann Aquiatan
             </p>
             <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-6"></div>
           </div>
@@ -162,7 +162,7 @@ const EntourageSection = () => {
               Coin Bearer
             </h2>
             <p className="entourage-name text-xl mb-2">
-              Marco Aquistan
+              Marco Aquiatan
             </p>
             <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-6"></div>
           </div>
@@ -171,17 +171,12 @@ const EntourageSection = () => {
         {/* Flower Girls */}
         <div className="mb-8">
           <h2 className="entourage-subtitle text-2xl mb-2">
-            Flower Girls
+            Flower Girl
           </h2>
           <p className="entourage-name text-xl mb-2">
             Ms. Haydara Mama
           </p>
           <div className="w-64 h-px bg-[#e8d3a9] mx-auto mb-4"></div>
-          
-          <p className="entourage-name text-xl mb-2">
-            Mrs. Zhel Giuiral-Paas
-          </p>
-          <div className="w-64 h-px bg-[#e8d3a9] mx-auto"></div>
         </div>
       </div>
     </section>

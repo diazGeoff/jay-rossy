@@ -58,7 +58,7 @@ const StorySection = () => {
     <>
       <section className="py-16 px-4 bg-[#e8d3a9] flex flex-col items-center justify-center text-center">
         {/* Title */}
-        <h1 className="story-title text-5xl mb-8">
+        <h1 className="story-title text-4xl mb-8 px-4 py-2">
           HOW WE GOT HERE
         </h1>
         
@@ -119,7 +119,7 @@ const StorySection = () => {
       {/* Meet Jay Section */}
       <section className="py-16 px-4 bg-[#e8d3a9] flex flex-col items-center justify-center text-center">
         {/* Title */}
-        <h1 className="meet-title text-5xl mb-8">
+        <h1 className="meet-title text-4xl mb-8 px-4 py-2">
           MEET JAY
         </h1>
         
@@ -144,7 +144,7 @@ const StorySection = () => {
       {/* Meet Rossy Section */}
       <section className="py-16 px-4 bg-[#e8d3a9] flex flex-col items-center justify-center text-center">
         {/* Title */}
-        <h1 className="meet-title text-5xl mb-8">
+        <h1 className="meet-title text-4xl mb-8 px-4 py-2">
           MEET ROSSY
         </h1>
         
@@ -169,7 +169,7 @@ const StorySection = () => {
       {/* Meet Dio Section */}
       <section className="py-16 px-4 bg-[#e8d3a9] flex flex-col items-center justify-center text-center">
         {/* Title */}
-        <h1 className="meet-title text-5xl mb-8">
+        <h1 className="meet-title text-4xl mb-8 px-4 py-2">
           MEET DIO
         </h1>
         
@@ -199,11 +199,10 @@ const StorySection = () => {
 
       {/* Family Photo Section */}
       <section className="family-photo-section">
-        <Image 
-          src={asset20} 
+        <img 
+          src='/images/asset-20.png'
           alt="Jay, Rossy and Dio together" 
           className="family-photo"
-          priority
           width={2000}
           height={1500}
         />
