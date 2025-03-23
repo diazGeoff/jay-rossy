@@ -8,7 +8,6 @@ import asset16 from '@/assets/images/asset-16.png';
 import asset17 from '@/assets/images/asset-17.png';
 import asset18 from '@/assets/images/asset-18.png';
 import asset19 from '@/assets/images/asset-19.png';
-import asset20 from '@/assets/images/asset-20.png';
 
 const StorySection = () => {
   const [activeSlide, setActiveSlide] = useState(0);
